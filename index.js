@@ -5,7 +5,6 @@ const app = express();
 app.use(cors());
 // configure body-parser middleware to parse JSON payloads
 app.use(bodyParser.json());
-
 app.get("/",(req,res)=>{
     res.send("Server started");
 })
