@@ -8,7 +8,6 @@ app.use(bodyParser.json());
 app.get("/",(req,res)=>{
     res.send("Server started");
 })
-
 // define a route handler function for the webhook endpoint
 app.post('/webhook', (req, res) => {
   // extract the courier data from the webhook notification payload
